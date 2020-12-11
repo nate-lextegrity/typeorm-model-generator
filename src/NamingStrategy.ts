@@ -75,7 +75,7 @@ export function entityName(oldEntityName: string, entity?: Entity): string {
 }
 
 export function columnName(oldColumnName: string, column?: Column): string {
-    return oldColumnName;
+    return changeCase.snakeCase(oldColumnName);
 }
 
 export function fileName(oldFileName: string): string {
